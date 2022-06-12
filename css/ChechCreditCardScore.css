@@ -1,0 +1,226 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: ProximaNova, Helvetica, Arial, sans-serif;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+    /* hiding the scroll bar  */
+    body::-webkit-scrollbar {
+        display: none;
+    }
+/* end  */
+header {
+    background-color: white;
+    height: 80px ;
+}
+
+/* 1st screen starts here  */
+#first-header{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    background-color: rgb(228, 218, 218);
+    /* background-color: #b8e6cf; */
+    position: fixed;
+}
+.first-part {
+    width: 40%;
+    height: 100%;
+    float: left;
+    background-color: blueviolet;
+}
+
+.logo {
+    width: 50%;
+    position: fixed;
+    float: left;
+    margin: 16px 68px;
+    /* margin-left: 10px; */
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    float: left;
+    padding-top: 3.5vh;
+}
+
+.logo img {
+    /* 2560 x 443 */
+    width: 150px;
+    height: 65px;
+    margin-top: 3px;
+    border-radius: 3px;
+}
+.first-part-head {
+    width: 70%;
+    padding-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.first-part-para {
+    width: 70%;
+    padding-top: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 20px;
+}
+.cibil img {
+    width: 400px;
+    height: 250px;
+    margin-top: 3px;
+    border-radius: 3px;
+    padding-bottom: 20px;
+    
+}
+.second-part {
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+.second-partbutton {
+    padding-left: 700px;
+    padding-top: 30px;
+}
+.second-partbutton button {
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border-width: 1px;
+}
+.second-partbutton button:hover {
+    background-color: gainsboro;
+}
+
+.second-part-head h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: none;
+    text-decoration: underline;
+    padding-bottom: 0;
+    
+}
+.second-part-head p {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: none;
+    padding-top: 0;
+}
+#form{
+    padding-left: 220px;
+    padding-top: 10px;
+}
+#form input{
+    padding: 12px 120px 10px 30px;
+    border-radius: 10px;
+    border-width: 1px;
+    
+    
+}
+.form1 {
+    padding-left: 220px;
+    padding-top: 10px;
+}
+.form1input {
+    padding: 12px 120px 10px 30px;
+    border-radius: 10px;
+    border-width: 1px;
+    
+}
+.form2 {
+    padding-left: 220px;
+    padding-top: 40px;
+
+}
+.form2input {
+    padding: 12px 120px 10px 30px;
+    border-radius: 10px;
+    border-width: 1px;
+    
+}
+.form3 {
+    padding-left: 220px;
+    padding-top: 40px;
+
+}
+.form3input {
+    padding: 12px 120px 10px 30px;
+    border-radius: 10px;
+    border-width: 1px;
+    
+}
+.form4 {
+    padding-left: 220px;
+    padding-top: 0px;
+    padding-bottom: 0;
+
+}
+.form4 p {
+    font-size: 1.4em;
+    font-weight: 100;
+    padding-bottom: none;
+}
+.form5 {
+    padding-left: 220px;
+    padding-top: 0;
+}
+.form6 {
+    padding-left: 220px;
+    padding-top: 10px;
+    padding-right: 200px;
+
+}
+.form6 p {
+    font-size: 0.8em;
+}
+.form7 {
+    padding-left: 220px;
+    padding-top: 10px;
+
+}
+.form7button {
+    padding: 10px 90px 10px 90px;
+    border-radius: 10px;
+    border-width: 1px;
+    background-color: limegreen;
+}
+.form7button:hover {
+    background-color: greenyellow;
+}
+
+
+/* <div class="second-part">
+              <div class="second-partbutton">
+                  <button class="button" style="trial" value="submit" type="submit" >Sign In</button>
+              </div>
+              <div class="second-part-head">
+                  <h1>Lifetime Free Credit Score</h1>
+                  <p>Get your credit report for free, with monthly updates</p>
+              </div>
+              <div class="form1">
+                  <input  class="form1input" type="text" name="name" placeholder="Full Name">
+              </div>
+              <div class="form2">
+                  <input  class="form2input" type="email" name="email" placeholder="Email Address">
+              </div>
+              <div class="form3">
+                  <input class="form3input" type="number" name="number" placeholder="Mobile Number">
+              </div>
+              <div class="form4">
+                  <p>Gender</p>
+              </div>
+              <div class="form5">
+                <label for="sectionda">
+                    <input type="radio" name="section" class="sectionda"> Male
+                 </label>
+                 <label for="sectiondb">
+                     <input type="radio" name="section" class="sectiondb"> Female
+                 </label>
+              </div>
+              <div class="form6">
+                  <p>I hereby appoint HDFC as my authorised representative to receive my credit information from Cibil / Equifax / Experian / CRIF Highmark (bureau).</p>
+              </div>
+              <div class="form7">
+                <button class="form7button" style="trial" value="submit" type="submit" >Get Free Credit Report</button>
+            </div>
+          </div> */

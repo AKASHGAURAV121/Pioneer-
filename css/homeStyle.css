@@ -1,0 +1,985 @@
+
+
+html, body {
+   
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: ProximaNova, Helvetica, Arial, sans-serif;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+    /* hiding the scroll bar  */
+    body::-webkit-scrollbar {
+        display: none;
+    }
+/* end  */
+
+/* 1st screen starts here  */
+nav {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 10vh;
+    background-color: #d9f0ff;
+    /* background-color: #b8e6cf; */
+   
+}
+
+.logo {
+   
+    float: left;
+    margin: 16px 68px;
+    /* margin-left: 10px; */
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    float: left;
+}
+
+.logo img {
+    /* 2560 x 443 */
+    width: 150px;
+    height: 65px;
+    margin-top: 3px;
+    border-radius: 3px;
+}
+
+nav ul {
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: ls;
+    float: left;
+    margin-left: 350px;
+}
+
+nav.black {
+    background: #000;
+}
+
+nav.black .logo {
+    color: white;
+}
+
+nav.black ul li a {
+    color: white;
+}
+
+nav.black ul li:hover {
+    background-color: rgb(66, 66, 66);
+    ;
+}
+
+nav.black button {
+    color: white;
+    border: none;
+    background-color: black;
+}
+
+nav ul li {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 15px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul li:hover {
+    background-color: #bbcbe7;
+    border-radius: 50px;
+}
+
+nav button {
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-right: 80px;
+    margin-top: 26px;
+    border: none;
+    background-color: #d9f0ff;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 70px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 47px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+}
+.dropdown-content a .log {
+    outline: none;
+    border: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+.dropdown-content a .log:hover {
+    background-color: #ddd;
+    border-radius: 2px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 2px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover nav button {
+    background-color: #3e8e41;
+}
+
+
+
+.nav-next {
+    padding-top: 11vh;
+    height: 88.7vh;
+    background-color: #d9f0ff;
+    /* border-bottom: 2px solid lightgray; */
+    /* background-color: #b8e6cf; */
+}
+
+.nav-next-content {
+    margin: auto;
+    width: 91%;
+    height: auto;
+    margin-top: 30px;
+    /* border: 2px solid blue; */
+}
+
+.input-search {
+    width: 63%;
+    line-height: 78px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    float: left;
+}
+
+.front-image {
+    float: right;
+    width: 37%;
+    margin-top: 30px;
+    /* margin-right: 2px; */
+    /* border: 1px solid red; */
+}
+
+    .front-image img {
+        height: 450px;
+    }
+
+.search {
+    background-color: white;
+    width: 90%;
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-top: 8px;
+    margin-top: 10%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.search input {
+    border: none;
+    outline: none;
+    font-size: 28px;
+    width: 85%;
+    /* border: 2px solid red; */
+}
+
+.search button {
+    background-color: navy;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    float: right;
+    padding: 15px;
+    margin-right: 25px;
+    margin-top: 6.5px;
+    cursor: pointer;
+}
+
+        .search button i {
+            color: white;
+            font-size: 28px;
+        }
+
+.nav-next-content h1 {
+    font-size: 76.3px;
+    font-weight: 900;
+}
+
+.nav-next-content h5 {
+    font-size: 18px;
+    line-height: 24px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    /* margin-top: 2.5%; */
+}
+
+/* 1st screen ends here  */
+/* 1st screen ends here  */
+
+/* savings account style starts  */
+.savings_ac {
+    text-align: center;
+    background-color: #f5f8fa;
+    border: 2px solid #f5f8fa;
+}
+
+    .savings_ac p {
+        font-size: 18px;
+        line-height: 24px;
+        vertical-align: baseline;
+        letter-spacing: normal;
+        word-spacing: 0px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .savings_ac button {
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        background-color: #0089e3;
+        color: white;
+        border-radius: 30px;
+        padding: 7px 20px 7px 20px;
+        margin-bottom: 20px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        ;
+        cursor: pointer;
+    }
+
+
+/* savings account syle ends  */
+
+/* customer review style starts  */
+.customer-review {
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+    height: 27vh;
+}
+
+    .customer-review h4 {
+        width: 200px;
+        text-align: center;
+        margin-left: 42.5%;
+        font-size: 15px;
+        line-height: 20px;
+        vertical-align: baseline;
+        letter-spacing: normal;
+        word-spacing: 0px;
+        font-weight: 700;
+        background-color: rgb(230, 230, 15);
+        color: white;
+        padding: 3px;
+        border-radius: 5px;
+        /* border: 2px solid red; */
+    }
+
+.review-menu {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#review-st {
+    float: left;
+    width: 30%;
+    height: auto;
+    background-color: white;
+    border: 2px solid #d9f0ff;
+    background-color: #f5f8fa;
+    border-radius: 18px;
+    padding: 0 10px 2px 10px;
+}
+
+#review-nd {
+    float: left;
+    width: 30%;
+    height: auto;
+    background-color: white;
+    border: 2px solid #d9f0ff;
+    background-color: #f5f8fa;
+    border-radius: 18px;
+    margin-left: 25px;
+    padding: 0 10px 2px 10px;
+}
+
+#review-rd {
+    float: right;
+    width: 30%;
+    height: auto;
+    background-color: white;
+    border: 2px solid #d9f0ff;
+    background-color: #f5f8fa;
+    border-radius: 18px;
+    padding: 0 10px 2px 10px;
+}
+
+.customer-review h6 {
+    font-size: 11.5px;
+}
+
+.customer-review h5 {
+    font-size: 13px;
+    font-weight: 900;
+}
+/* customer review end  */
+
+/* card list style starts  */
+/* .container-content-section {
+    height: 100vh;
+    text-align: center;
+    margin-top: 100px;
+}
+
+    .container-content-section h1 {
+        margin-top: 50px;
+        font-size: 39px;
+        line-height: 44px;
+        vertical-align: baseline;
+        letter-spacing: normal;
+        word-spacing: 0px;
+        font-weight: 900;
+    } */
+
+    /* .container-content-section p{
+        font-size: 18px;
+        line-height: 24px;
+        vertical-align: baseline;
+        letter-spacing: normal;
+        word-spacing: 0px;
+        font-weight: 400;
+    }
+
+
+
+
+    .shop-item:hover {
+        background-color: rgb(228, 241, 247);
+        border-radius: 20px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    .shop-item-image {
+        width: 280px;
+        height: 140;
+    }
+
+    .shop-item-price p {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .card1 button {
+        width: 79%;
+        border: none;
+        outline: none;
+        background-color: #60d399;
+        color: white;
+        border-radius: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px 0 10px 0;
+        margin-bottom: 20px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        cursor: pointer;
+    } */
+
+    /* .container-content-section
+
+
+
+
+
+    .cart-row {
+        display: flex;
+    }
+    
+    .cart-item {
+        width: 45%;
+    }
+    
+    .cart-price {
+        width: 20%;
+        font-size: 1.2em;
+        color: #333;
+    }
+    
+    .cart-quantity {
+        width: 35%;
+    }
+    
+    .cart-item-title {
+        color: #333;
+        margin-left: .5em;
+        font-size: 1.2em;
+    }
+    
+    .cart-item-image {
+        width: 75px;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .btn-danger {
+        color: white;
+        background-color: #EB5757;
+        border: none;
+        border-radius: .3em;
+        font-weight: bold;
+    }
+    
+    .btn-danger:hover {
+        background-color: #CC4C4C;
+    } */
+
+.card2 {
+    width: 25%;
+    height: auto;
+    padding: 20px 10px 0 0;
+    margin-left: 100px;
+    float: left;
+}
+
+    .card2:hover {
+        background-color: rgb(228, 241, 247);
+        border-radius: 20px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    .card2 img {
+        width: 280px;
+        height: 140;
+    }
+
+        .card2 img:hover {
+            margin-top: 0;
+        }
+
+    .card2 p {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .card2 button {
+        width: 79%;
+        border: none;
+        outline: none;
+        background-color: #60d399;
+        color: white;
+        border-radius: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px 0 10px 0;
+        margin-bottom: 20px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+.card3 {
+    width: 25%;
+    height: auto;
+    padding: 20px 10px 0 0;
+    margin-right: 60px;
+    float: right;
+}
+
+    .card3:hover {
+        background-color: rgb(228, 241, 247);
+        border-radius: 20px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    .card3 img {
+        width: 300px;
+        height: 140;
+    }
+
+        .card3 img:hover {
+            margin-top: 0;
+        }
+
+    .card3 p {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .card3 button {
+        width: 79%;
+        border: none;
+        outline: none;
+        background-color: #60d399;
+        color: white;
+        border-radius: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px 0 10px 0;
+        margin-bottom: 20px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+.card4 {
+    width: 25%;
+    height: auto;
+    padding-top: 3vh;
+    padding: 20px 10px 0 0;
+    margin-left: 280px;
+    float: left;
+}
+
+.card4:hover {
+    background-color: rgb(228, 241, 247);
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.card4 img {
+    width: 300px;
+    height: 140;
+}
+
+.card4 p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card4 button {
+    width: 79%;
+    border: none;
+    outline: none;
+    background-color: #60d399;
+    color: white;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+    margin-bottom: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+
+
+
+
+.card5 {
+    width: 25%;
+    height: auto;
+    padding: 20px 10px 0 0;
+    margin-left: 120px;
+    float: left;
+}
+
+.card5:hover {
+    background-color: rgb(228, 241, 247);
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.card5 img {
+    width: 280px;
+    height: 140;
+}
+
+.card5 img:hover {
+    margin-top: 0;
+}
+
+.card5 p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card5 button {
+    width: 79%;
+    border: none;
+    outline: none;
+    background-color: #60d399;
+    color: white;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+    margin-bottom: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+
+.cards .more {
+    color: white;
+    background-color: #1091e7;
+    font-size: 21px;
+    font-weight: 700;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    padding: 15px 20px 15px 20px;
+    cursor: pointer;
+}
+
+
+
+.credit-meter {
+    margin-top: 24px;
+    background-color: #f7f7f7;
+    height: 31.9vh;
+}
+
+.meter-img {
+    width: 30%;
+    float: left;
+}
+
+.meter-img img {
+    width: 90%;
+    height: 90%;
+    margin-left: 60px;
+}
+
+.meter-text {
+    text-align: center;
+    float: right;
+    margin-right: 130px;
+    margin-top: 20px;
+}
+
+.meter-text h3 {
+    font-size: 30px;
+    line-height: 24px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.meter-text p {
+    font-size: 18px;
+    line-height: 24px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.meter-text button {
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: #0089e3;
+    color: white;
+    border-radius: 30px;
+    padding: 7px 20px 7px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+/* dou you know starts here  */
+.do-you-know {
+    height: 20vh;
+    background-color: #d9f0ff;
+    border: 2px solid #d9f0ff;
+}
+
+.know-text {
+    float: left;
+    margin-right: 200px;
+    margin-left: 70px;
+}
+
+.know-text h4 {
+    font-size: 24px;
+    line-height: 24px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.know-text p {
+    font-size: 18px;
+    line-height: 24px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    font-weight: 400;
+    font-style: normal
+}
+
+.know-button {
+    float: right;
+    margin-right: 90px;
+    margin-top: 50px;
+}
+
+.know-button button {
+    background-color: #d9f0ff;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 7px 15px 7px 15px;
+    font-weight: 600;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.know-button button:hover {
+    background-color: #b9d6e9;
+}
+/* do you know ends here  */
+
+/* footer starts here  */
+.footer {
+    height: 53vh;
+    background-color: #ffffff;
+    padding-left: 70PX;
+    /* padding-right: 50px; */
+    padding-top: 100PX;
+}
+
+.social-media {
+    width: 17.5%;
+    float: left;
+    margin-right: 35px;
+}
+
+.social-media h4 {
+    font-size: 24px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    font-weight: 900;
+}
+
+.social-media a {
+    margin-bottom: 100px;
+}
+
+.social-media .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 15px 5px 0;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+        .social-media .fa:hover {
+            opacity: 0.7;
+        }
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #c14081;
+    color: white;
+}
+
+.social-media p {
+    font-size: 12px;
+    line-height: 16px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    font-weight: 400;
+}
+
+    .social-media p a {
+        color: black;
+    }
+
+.company {
+    float: left;
+    margin-top: 20px;
+    /* margin-left: 20px; */
+    width: 14.66%;
+    /* border-right: 2px solid black; */
+}
+
+    .company .h3 {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .company ul {
+        list-style-type: none;
+    }
+
+    .company li a {
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: 400;
+        color: black;
+        text-decoration: none;
+    }
+
+        .company li a:hover {
+            text-decoration: underline;
+        }
+
+.community {
+    float: left;
+    margin-top: 18px;
+    /* margin-left: 20px; */
+    width: 14.66%;
+}
+
+    .community .h3 {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .community ul {
+        list-style-type: none;
+    }
+
+    .community li a {
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: 400;
+        color: black;
+        text-decoration: none;
+    }
+
+        .community li a:hover {
+            text-decoration: underline;
+        }
+
+.help {
+    float: left;
+    margin-top: 18px;
+    /* margin-left: 20px; */
+    width: 14.66%;
+    margin-right: 50px;
+}
+
+    .help .h3 {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .help ul {
+        list-style-type: none;
+    }
+
+.help li a {
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+}
+
+.help li a:hover {
+    text-decoration: underline;
+}
+
+.get-app h3 {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.app-store {
+    height: 5%;
+    width: 10%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.play-store {
+    height: 10%;
+    width: 11%;
+    margin-right: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+/* footer ends here  */
